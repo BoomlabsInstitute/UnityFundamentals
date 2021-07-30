@@ -21,9 +21,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         //  Mover el carro hacia la derecha
-
         entradaHorizontal = Input.GetAxis("Horizontal");
 
         entradaVertical = Input.GetAxis("Vertical");
@@ -35,7 +33,7 @@ public class PlayerController : MonoBehaviour
 
         transform.Rotate(Vector3.up, VelocidadGiro * entradaHorizontal * Time.deltaTime); // Rotar el vehículo en vez de deslizarlo.
 
-        //transform.Translate(Vector3.right * Time.deltaTime * VelocidadGiro * entradaHorizontal);
+        // transform.Translate(Vector3.right * Time.deltaTime * VelocidadGiro * entradaHorizontal);
 
 
     }
