@@ -21,11 +21,10 @@ public class PlayerController : MonoBehaviour
     // La actualización se llama una vez por fotograma
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space)){
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
             Instantiate(proyectil, transform.position, proyectil.transform.rotation);
         }
-
-
 
         entradaHorizontal = Input.GetAxis("Horizontal");
         transform.Translate(Vector3.right * entradaHorizontal * Time.deltaTime * velocidad);
